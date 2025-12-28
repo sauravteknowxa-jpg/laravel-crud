@@ -1,4 +1,4 @@
-<form method="POST" action="{{ route('editupdate' ,$item->id) }}">
+<form method="POST" action="{{ route('editupdate' ,$item->id) }}" >
     @csrf
      @method('PUT')
     <input type="text" name="name" value="{{ $item->name }}">
